@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-content img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .banner-content div {
+            text-align: left;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -43,9 +59,13 @@
         <section id="banner">
             <div class="inner">
                 <div class="logo"><span class="icon fa-gem"></span></div>
-                <h2>Abdullah Shamsan</h2>
-                <p>Computer Science Student & Aspiring AI Engineer</p>
-                <img src="images/profile_pic.jpg" alt="Abdullah Shamsan" style="width: 150px; height: auto; border-radius: 50%;">
+                <div class="banner-content">
+                    <img src="images/profile_pic.jpg" alt="Abdullah Shamsan">
+                    <div>
+                        <h2>Abdullah Shamsan</h2>
+                        <p>COMPUTER SCIENCE STUDENT & ASPIRING AI ENGINEER</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -149,16 +169,16 @@
                     <div class="content">
                         <h2 class="major">Education</h2>
                         <div class="education-item">
-                            <h3>University of Maryland</h3>
+                            <h3><a href="https://www.umd.edu/" target="_blank">University of Maryland</a></h3>
+                            <img src="images/umd_logo.png" alt="University of Maryland Logo" style="width: 100px; height: auto; float: right;">
                             <p>B.S. in Computer Science, Jan 2024 – Present</p>
-                            <img src="images/umd_logo.png" alt="University of Maryland Logo" style="width: 100px; height: auto;">
                             <p>GPA: 3.7</p>
                             <p>Relevant Coursework: Computer Science I and II, Calculus I and II, Multivariable Calculus, Differential Equations, Linear Algebra</p>
                         </div>
                         <div class="education-item">
-                            <h3>Montgomery College</h3>
+                            <h3><a href="https://www.montgomerycollege.edu/" target="_blank">Montgomery College</a></h3>
+                            <img src="images/mc_logo.png" alt="Montgomery College Logo" style="width: 100px; height: auto; float: right;">
                             <p>A.A. in Computer Science, Aug 2021 – Dec 2023</p>
-                            <img src="data:image/png;base64,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" alt="Abdullah Shamsan" style="width: 100px; height: auto;">
                             <p>GPA: 3.85, Phi Theta Kappa, Dean’s List, Graduated with Honors</p>
                             <p>Relevant Coursework: Computer Science I and II, Calculus I and II, Multivariable Calculus, Differential Equations, Linear Algebra</p>
                         </div>
@@ -227,25 +247,6 @@
             <div class="inner">
                 <h2 class="major">Contact</h2>
                 <p>Feel free to get in touch with me through the following channels:</p>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
                 <ul class="contact">
                     <li class="icon solid fa-envelope"><a href="mailto:abdullahrasshamsan@gmail.com">abdullahrasshamsan@gmail.com</a></li>
                     <li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/ashamsan">linkedin.com/in/ashamsan</a></li>
